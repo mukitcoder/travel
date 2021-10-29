@@ -12,26 +12,19 @@ initializeAuthentication();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
+  const [isLoading, setIsLoading] = useState(true)
 
   const auth = getAuth();
 
   const signInUsingGoogle = () => {
+      setIsLoading(true)
     const googleProvider = new GoogleAuthProvider();
 
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
       })
-      .catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.email;
-        // The AuthCredential type that was used.
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        // ...
-      });
+      .finally(()=>setIsLoading(false))
   };
 
   useEffect(() => {
@@ -41,15 +34,20 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
+      setIsLoading(false)
     });
     return () => unsubscribe;
   }, []);
 
   const logOut = () => {
-    signOut(auth).then(() => {});
+      setIsLoading(true)
+    signOut(auth)
+    .then(() => {})
+    .finally(()=>setIsLoading(false))
   };
   return {
     user,
+    isLoading,
     signInUsingGoogle,
     logOut,
   };
