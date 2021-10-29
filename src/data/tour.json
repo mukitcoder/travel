@@ -1,0 +1,38 @@
+[
+    {
+        "key": "1",
+        "name": "Neil Island",
+        "des": "Neil Island is one of India’s Andaman Islands, in the Bay of Bengal. Bharatpur Beach has coral reefs teeming with tropical fish. Laxmanpur Beach is known for its sunset views",
+        "img": "https://i.ibb.co/myP4bjW/nail-island.png"
+    },
+    {
+        "key": "2",
+        "name": "Mauritius",
+        "des": "Mauritius, an Indian Ocean island nation, is known for its beaches, lagoons and reefs. The mountainous interior includes Black River Gorges National Park, with rainforests, waterfalls, hiking trails and wildlife like the flying fox",
+        "img": "https://i.ibb.co/wrfQDLn/mauritius.png"
+    },
+    {
+        "key": "3",
+        "name": "Agra",
+        "des": "Agra is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh, about 210 kilometres south of the national capital New Delhi and 335km west of the state capital Lucknow",
+        "img": "https://i.ibb.co/3sMYk66/agra.png"
+    },
+    {
+        "key": "4",
+        "name": "South India",
+        "des": "South India is a region consisting of the southern part of India, which encompasses the Indian states of Andhra Pradesh, Karnataka, Kerala, Tamil Nadu, and Telangana, as well as the union territories of Lakshadweep and Puducherry, comprising 19.31% of India's area",
+        "img": "https://i.ibb.co/q9smDRC/south-india.png"
+    },
+    {
+        "key": "5",
+        "name": "Paris",
+        "des": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine",
+        "img": "https://i.ibb.co/yXW9FHz/paris.png"
+    },
+    {
+        "key": "6",
+        "name": "New York",
+        "des": "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers",
+        "img": "https://i.ibb.co/Scdcqds/new-york.png"
+    }
+]
