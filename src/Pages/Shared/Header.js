@@ -1,8 +1,11 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
 const Header = () => {
+
+    const {user, logOut} = useAuth()
   return (
     <div className="mb-5 pb-2">
       <Navbar bg="light" expand="lg" fixed="top">
@@ -27,14 +30,13 @@ const Header = () => {
               >
                 Home
               </NavLink>
-              <NavLink
-                className="text-decoration-none fw-bolder me-5"
-                to="/login"
-              >
-                Login
-              </NavLink>
               {/* Username */}
-              <a href="#login">mark otto</a>
+              <img className="rounded-circle me-3" width="30px" src= {user.photoURL} alt="" />
+              <a className="text-decoration-none fw-bolder me-3" href="#login">{user?.displayName}</a>
+             {
+                 user?.email? <Button  onClick={logOut} className="" variant="secondary" size="sm">Log Out</Button>:<NavLink className="text-decoration-none fw-bolder me-5 bg-warning rounded-pill px-3" to="/login">Log In</NavLink>
+             }
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
