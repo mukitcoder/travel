@@ -1,0 +1,10 @@
+.banner-container {
+  background-image: url(../../../images/cover.jpg),linear-gradient(to right, #0f2027, #203a43, #f08e1f);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  width: 100vw;
+  height: 100vh;
+}

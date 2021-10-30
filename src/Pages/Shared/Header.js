@@ -2,15 +2,16 @@ import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
+import logo from '../.././images/logo.png'
 
 const Header = () => {
 
     const {user, logOut} = useAuth()
   return (
-    <div className="mb-5 pb-2">
+    <div className="mb-5 pb-3">
       <Navbar bg="light" expand="lg" fixed="top">
         <Container fluid>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          <NavLink to="/home"><img src= {logo} alt="logo" /> </NavLink>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -34,7 +35,7 @@ const Header = () => {
               <img className="rounded-circle me-3" width="30px" src= {user.photoURL} alt="" />
               <a className="text-decoration-none fw-bolder me-3" href="#login">{user?.displayName}</a>
              {
-                 user?.email? <Button  onClick={logOut} className="" variant="secondary" size="sm">Log Out</Button>:<NavLink className="text-decoration-none fw-bolder me-5 bg-warning rounded-pill px-3" to="/login">Log In</NavLink>
+                 user?.email? <Button  onClick={logOut} className="" variant="secondary" size="sm">Log Out</Button>:<NavLink className="text-decoration-none fw-bolder me-5 bg-warning rounded-pill px-3 w-25" to="/login">Log In</NavLink>
              }
               
             </Nav>
