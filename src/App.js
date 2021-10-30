@@ -9,6 +9,7 @@ import Footer from "./Pages/Shared/Footer";
 import Login from "./Pages/Login/Login/Login";
 import AuthProvider from "./Contexts/AuthProvider";
 import PrivateRoute from "./Pages/Login/Login/PrivateRoute/PrivateRoute";
+import AddService from "./Pages/AddService/AddService";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/addService">
+              <AddService></AddService>
             </Route>
             <Route path="/login">
               <Login></Login>
