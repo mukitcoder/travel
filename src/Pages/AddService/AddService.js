@@ -19,7 +19,7 @@ const AddService = () => {
   return (
     <div className=" d-flex justify-content-center align-items-center mb-5">
       <Col md={4}>
-        <h2 className="py-3 text-center">Add Your Package</h2>
+        <h2 className="py-3 text-center">Add Package To Homepage !</h2>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <Form.Group className="mb-3">
             <Form.Control
