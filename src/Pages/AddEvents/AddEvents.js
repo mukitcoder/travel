@@ -3,7 +3,7 @@ import { Col, Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
 const AddEvents = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit} = useForm();
   const onSubmit = data => console.log(data);
 
   return (

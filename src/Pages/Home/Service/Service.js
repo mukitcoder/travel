@@ -14,9 +14,8 @@ const Service = ({ service }) => {
             <Card.Text>{des.slice(0, 200)}...</Card.Text>
             <div className="d-flex justify-content-between">
             <Link to={`/booking/${_id}`}>
-            <Button>Book Now</Button>
+            <Button className="w-100" >Book Now</Button>
             </Link>
-            <Button>View Package</Button>
             </div>
           </Card.Body>
         </Card>

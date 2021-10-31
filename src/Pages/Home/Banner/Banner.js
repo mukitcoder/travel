@@ -20,10 +20,10 @@ const Banner = () => {
             events
           </p>
           <Col md={8} xs={12} className="d-flex justify-content-evenly mx-auto">
-            <img className="bg-info px-3 rounded-3" src={image1} alt="" />
-            <img className="bg-info px-3 rounded-3" src={image2} alt="" />
-            <img className="bg-info px-3 rounded-3" src={image3} alt="" />
-            <img className="bg-info px-3 rounded-3" src={image4} alt="" />
+            <img className="image-one px-3 rounded-3" src={image1} alt="" />
+            <img className="image-two px-3 rounded-3" src={image2} alt="" />
+            <img className="image-three px-3 rounded-3" src={image3} alt="" />
+            <img className="image-four px-3 rounded-3" src={image4} alt="" />
             
           </Col>
         </Col>

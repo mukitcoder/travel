@@ -8,3 +8,44 @@
   width: 100vw;
   height: 100vh;
 }
+
+
+.image-one{
+  background-color: lightcoral;
+  transition: 0.5s;
+}
+.image-two{
+  background-color: lightsalmon;
+  transition: 0.5s;
+}
+.image-three{
+  background-color: lightseagreen;
+  transition: 0.5s;
+}
+.image-four{
+  background-color: lightgreen;
+  transition: 0.5s;
+}
+
+
+.image-one:hover{
+  background-color: rgb(12, 194, 12);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.image-two:hover{
+  background-color: rgb(12, 194, 12);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.image-three:hover{
+  background-color: rgb(12, 194, 12);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.image-four:hover{
+  background-color: rgb(12, 194, 12);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
