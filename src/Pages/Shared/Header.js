@@ -41,7 +41,7 @@ const Header = () => {
               <img className="rounded-circle me-3" width="30px" src= {user.photoURL} alt="" />
               <a className="text-decoration-none fw-bolder me-3" href="#login">{user?.displayName}</a>
              {
-                 user?.email? <Button  onClick={logOut} className="" variant="secondary" size="sm">Log Out</Button>:<NavLink className="text-decoration-none fw-bolder me-5 bg-warning rounded-pill px-3 w-25" to="/login">Log In</NavLink>
+                 user?.email? <Button  onClick={logOut} className="" variant="secondary" size="sm">Log Out</Button>:<NavLink className="text-decoration-none fw-bolder me-5 bg-warning rounded-pill px-3" to="/login">Log In</NavLink>
              }
               
             </Nav>

@@ -12,8 +12,6 @@ import PrivateRoute from "./Pages/Login/Login/PrivateRoute/PrivateRoute";
 import AddService from "./Pages/AddService/AddService";
 import ManageServices from "./Pages/Home/ManageServices/ManageServices";
 import AddEvents from "./Pages/AddEvents/AddEvents";
-import AdminDashboard from "./Pages/AdminDashboard/AdminDashboard";
-import RegisterUser from "./Pages/RegisterUser/RegisterUser";
 import NotFound from "./Pages/NotFound/NotFound";
 
 
@@ -34,18 +32,12 @@ function App() {
             <Route path="/addEvents">
               <AddEvents></AddEvents>
             </Route>
-            <Route path="/adminDashboard">
-              <AdminDashboard></AdminDashboard>
-            </Route>
-            <Route path="/registerUser">
-              <RegisterUser></RegisterUser>
-            </Route>
-            <Route path="/addService">
+            <PrivateRoute path="/addService">
               <AddService></AddService>
-            </Route>
-            <Route path="/manageServices">
+            </PrivateRoute>
+            <PrivateRoute path="/manageServices">
               <ManageServices></ManageServices>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
