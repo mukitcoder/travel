@@ -10,6 +10,12 @@ import Login from "./Pages/Login/Login/Login";
 import AuthProvider from "./Contexts/AuthProvider";
 import PrivateRoute from "./Pages/Login/Login/PrivateRoute/PrivateRoute";
 import AddService from "./Pages/AddService/AddService";
+import ManageServices from "./Pages/Home/ManageServices/ManageServices";
+import AddEvents from "./Pages/AddEvents/AddEvents";
+import AdminDashboard from "./Pages/AdminDashboard/AdminDashboard";
+import RegisterUser from "./Pages/RegisterUser/RegisterUser";
+import NotFound from "./Pages/NotFound/NotFound";
+
 
 function App() {
   return (
@@ -24,8 +30,20 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+            <Route path="/addEvents">
+              <AddEvents></AddEvents>
+            </Route>
+            <Route path="/adminDashboard">
+              <AdminDashboard></AdminDashboard>
+            </Route>
+            <Route path="/registerUser">
+              <RegisterUser></RegisterUser>
+            </Route>
             <Route path="/addService">
               <AddService></AddService>
+            </Route>
+            <Route path="/manageServices">
+              <ManageServices></ManageServices>
             </Route>
             <Route path="/login">
               <Login></Login>
@@ -36,6 +54,9 @@ function App() {
             <PrivateRoute path="/booking/:id">
               <Booking></Booking>
             </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
           <Footer />
         </Router>

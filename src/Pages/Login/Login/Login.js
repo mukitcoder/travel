@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router";
 import useAuth from "../../../Hooks/useAuth";
 import "./Login.css";
@@ -7,7 +7,7 @@ import "./Login.css";
 // Login Section
 
 const Login = () => {
-  const { signInUsingGoogle, setIsLoading } = useAuth();
+  const { signInUsingGoogle } = useAuth();
   const location = useLocation();
   const history = useHistory();
   const redirect_uri = location.state?.from || "/home";

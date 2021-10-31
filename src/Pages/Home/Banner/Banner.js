@@ -1,6 +1,6 @@
 import React from "react";
 import "./Banner.css";
-import { Card, Col, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import image1 from "../../../images/1.png";
 import image2 from "../../../images/2.png";
 import image3 from "../../../images/30.png";

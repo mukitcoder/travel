@@ -1,20 +1,48 @@
+import axios from "axios";
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Form, Button, Col } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
 const AddService = () => {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => {console.log(data)};
+  const { register, handleSubmit, reset } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    axios.post("http://localhost:5000/services", data).then((res) => {
+      console.log(res);
+      if (res.data.insertedId) {
+        alert("added successfully");
+        reset();
+      }
+    });
+  };
   return (
-    <div>
-      <h2>Add a service</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
-        <textarea {...register("des")} placeholder="Description" />
-        <input type="number" {...register("price")} placeholder="price" />
-        <input {...register("img")} placeholder="image URL" />
-        <input type="submit" />
-      </form>
+    <div className=" d-flex justify-content-center align-items-center mb-5">
+      <Col md={4}>
+        <h2 className="py-3 text-center">Add Your Package</h2>
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <Form.Group className="mb-3">
+            <Form.Control
+              {...register("name", { required: true, maxLength: 20 })}
+              placeholder="Name"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Control
+              as="textarea"
+              rows={3}
+              {...register("des")}
+              placeholder="Description"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Control {...register("img")} placeholder="image URL" />
+          </Form.Group>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form>
+      </Col>
     </div>
   );
 };
