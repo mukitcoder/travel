@@ -15,9 +15,9 @@ const Services = () => {
   return (
     <>
     <Container>
-    <div className="text-center my-5">
-    <h1>Top Tour Packages</h1>
-    <p className="lead">World's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
+    <div className="text-center my-5 bg-warning bg-opacity-25 rounded-pill p-3">
+    <h1 className="fw-bold">Top Tour Packages</h1>
+    <p className="lead fw-bold">World's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
     </div>
       <Row xs={1} md={3} className="g-4">
         
