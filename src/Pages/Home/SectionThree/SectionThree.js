@@ -2,7 +2,7 @@ import React from "react";
 import { Accordion, Container } from "react-bootstrap";
 
 
-// extra section ---3
+// extra section -----3
 const SectionThree = () => {
   return (
     <Container className="mb-5 bg-info bg-opacity-25 pb-3">
