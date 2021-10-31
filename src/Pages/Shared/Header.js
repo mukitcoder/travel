@@ -37,12 +37,6 @@ const Header = () => {
               >
                 Add Service
               </NavLink>
-              <NavLink
-                className="text-decoration-none fw-bolder me-5"
-                to="/addEvents"
-              >
-                Add Events
-              </NavLink>
               {/* Username */}
               <img className="rounded-circle me-3" width="30px" src= {user.photoURL} alt="" />
               <a className="text-decoration-none fw-bolder me-3" href="#login">{user?.displayName}</a>
