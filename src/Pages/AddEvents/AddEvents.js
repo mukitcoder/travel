@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
+// Add Events Section
+
 const AddEvents = () => {
     const { register, handleSubmit} = useForm();
   const onSubmit = data => console.log(data);

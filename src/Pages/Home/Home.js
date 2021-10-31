@@ -5,6 +5,8 @@ import SectionThree from './SectionThree/SectionThree';
 import SectionTwo from './SectionTwo/SectionTwo';
 import Services from './Services/Services';
 
+// Home Page
+
 const Home = () => {
     return (
         <div>

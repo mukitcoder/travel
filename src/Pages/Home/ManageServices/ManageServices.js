@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Card, Col, Row, Button, Container } from "react-bootstrap";
 
+
+// Manage Service Page
 const ManageServices = () => {
   const [services, setServices] = useState([]);
 

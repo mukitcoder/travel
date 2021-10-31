@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import logo from '../.././images/logo.png'
 
+// header area
 const Header = () => {
 
     const {user, logOut} = useAuth()

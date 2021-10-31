@@ -4,6 +4,8 @@ import React from "react";
 import { Card, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+
+// service section
 const Service = ({ service }) => {
   const {_id, name, des, img } = service;
   return (

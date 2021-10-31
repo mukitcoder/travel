@@ -1,6 +1,10 @@
+import { faFacebook, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Container, FormControl, InputGroup, Row } from 'react-bootstrap';
 import footerImage from '../../images/logo.png'
+
+// Footer Area
 
 const Footer = () => {
     return (
@@ -49,9 +53,9 @@ const Footer = () => {
         <p>© 2021 Travel Company Inc. All rights reserved.</p>
         <p>Created By Abdullah Al Mukit</p>
         <div>
-        {/* <FontAwesomeIcon className="fs-2" icon={faFacebook} />
+        <FontAwesomeIcon className="fs-2" icon={faFacebook} />
         <FontAwesomeIcon className="mx-5 fs-2" icon={faGithub} />
-        <FontAwesomeIcon className=" fs-2" icon={faInstagram} /> */}
+        <FontAwesomeIcon className=" fs-2" icon={faInstagram} />
         </div>
         </Col>
       </Container>

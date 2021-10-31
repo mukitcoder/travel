@@ -8,6 +8,7 @@ import sectionImage2 from '../../../images/sectionOne-2.jpg'
 import sectionImage3 from '../../../images/sectionOne-3.jpg'
 import sectionImage4 from '../../../images/sectionOne-4.jpg'
 
+// extra section----1
 
 const SectionOne = () => {
   return (

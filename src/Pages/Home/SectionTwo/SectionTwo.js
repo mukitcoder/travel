@@ -6,6 +6,8 @@ import apple from "../../../images/apple.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
+
+// extra section two----2
 const SectionTwo = () => {
   return (
     <Container className="bg-light my-5">

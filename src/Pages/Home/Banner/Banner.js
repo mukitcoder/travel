@@ -6,6 +6,7 @@ import image2 from "../../../images/2.png";
 import image3 from "../../../images/30.png";
 import image4 from "../../../images/31.png";
 
+// Banner Section
 const Banner = () => {
   return (
     <>

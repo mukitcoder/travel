@@ -3,6 +3,7 @@ import React from "react";
 import { Form, Button, Col } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
+// Add services from here
 const AddService = () => {
   const { register, handleSubmit, reset } = useForm();
 

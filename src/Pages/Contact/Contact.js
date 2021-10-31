@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Form, Button } from "react-bootstrap";
 
+
+// Contact page
 const Contact = () => {
   return (
     <Container className="py-5 my-5 bg-warning bg-opacity-25 rounded-pill">
