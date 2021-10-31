@@ -13,6 +13,7 @@ import AddService from "./Pages/AddService/AddService";
 import ManageServices from "./Pages/Home/ManageServices/ManageServices";
 import AddEvents from "./Pages/AddEvents/AddEvents";
 import NotFound from "./Pages/NotFound/NotFound";
+import Contact from "./Pages/Contact/Contact";
 
 
 
@@ -38,6 +39,9 @@ function App() {
             <PrivateRoute path="/manageServices">
               <ManageServices></ManageServices>
             </PrivateRoute>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
