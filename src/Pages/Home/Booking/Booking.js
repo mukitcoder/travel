@@ -10,7 +10,7 @@ const Booking = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch(`https://haunted-asylum-96390.herokuapp.com/users`)
       .then((res) => res.json())
       .then((data) => setUsers(data));
   }, []);
@@ -19,7 +19,7 @@ const Booking = () => {
   const handleDeleteUser = (id) => {
     const confirmation = window.confirm("Are you sure for Delete?");
     if (confirmation) {
-      const url = `http://localhost:5000/users/${id}`;
+      const url = `https://haunted-asylum-96390.herokuapp.com/users/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -47,7 +47,7 @@ const Booking = () => {
     const city = cityRef.current.value;
     const date = dateRef.current.value;
     const newUser = { name, email, phone, city, date };
-    fetch("http://localhost:5000/users", {
+    fetch(`https://haunted-asylum-96390.herokuapp.com/users`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -67,7 +67,7 @@ const Booking = () => {
   // post users end
 
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${id}`)
+    fetch(`https://haunted-asylum-96390.herokuapp.com/services/${id}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
